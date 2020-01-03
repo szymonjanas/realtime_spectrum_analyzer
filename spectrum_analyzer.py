@@ -9,7 +9,6 @@ import threading
 FORMAT = pa.paInt16
 CHANNELS = 2
 RATE = 44100
-RECORD_SECONDS = 10
 INDEX = 1
 CHUNK = 1024
 
@@ -85,8 +84,8 @@ class Plot():
         self.is_on = False
 
     def plot(self):
-        sensivity_a = 8
-        sensivity_b = 8
+        sensivity_a = 10
+        sensivity_b = 10
         while self.is_on:
             self.ax1.cla()
             self.ax1.axis([0,CHUNK,-9**sensivity_a,9**sensivity_a])
@@ -99,8 +98,6 @@ class Plot():
             # plt.show()
             plt.pause(DELAY)
     
-# for i in range(0, int(RATE / CHUNK * RECORD_SECONDS)):
-
 def start():
     t1 = Signal()
     threads.append(t1)
