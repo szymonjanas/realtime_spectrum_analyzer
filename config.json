@@ -1,12 +1,21 @@
 {
-    "bars": 46,
+    "bars": 30,
     "spectrum" : {
         "Nf21" : 1025
     },
     "tones": {
         "bass": 300,
-        "mid": 2000,
-        "treble": 7000,
-        "max":18000
-    }
+        "mid": 3000,
+        "treble": 18000,
+        "max":22028
+    },
+    "signal": {
+        "CHUNK" : 2048
+    },
+    "frequency" : {
+        "Signal" : 200
+    },
+    "device": "Miks stereo (Realtek(R) Audio)",
+    "maxInputChannels": 2
+    
 }
